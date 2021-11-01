@@ -1,0 +1,182 @@
+body{
+    /* background-color: white; */
+    background-image: url('../images/wallet.jpg');
+    background-size: auto;
+    background-repeat:no-repeat ;
+    background-position: top;
+
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* type selector */
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    font-size: 1.3rem;
+}
+
+/* decendant selectors */
+
+ul li{
+    color: red;
+}
+p span{
+color:yellow;
+}
+/* class selectors */
+
+#myhouse{
+    width: 400px;
+    height: 400px;
+    background-color:#10b52b;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(30, 255, 0);
+}
+#newbox{
+    width: 400px;
+    height: 400px;
+    background-color: hsla(0,40%,51%,1);
+    margin: 40px;
+    margin: top right bottom left;
+    /* margin: 2px 3px 5px 10px; */
+    /* margin: 2px 30px 10px; */
+    /* margin: 30px 10px; */
+    margin: 5px auto;/* how to center an element */
+    padding: 40px ;
+}
+
+/* child selector */
+body>p{ 
+    font-size: 2rem;
+}
+
+/* attribute selector */
+input[type="text"],
+input[type="email"]{
+    padding: 10px;
+    border-bottom-style: dashed;
+    border-color: chartreuse;
+    border-width: 0 0 2px;
+}
+
+.form-group{
+    margin: 10px;
+}
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+/* grouping selector */
+
+input[type='text'],
+input[type='email'],
+input[type='submit']{
+    width: 50%;
+}
+
+/* psuedo selector */
+input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+}
+
+.reg{
+    font-weight: 100px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+p{
+    font-family: 'Irish Grover', cursive;
+    color: #14c7e3;
+    text-shadow: red 2px 3px;
+    word-spacing: 2cm;
+    
+}
+
+.newone{
+    width: 400px;
+    height: 400px;
+    background-color: hsla(0,40%,51%,1);
+    margin: 40px;
+    margin: top right bottom left;
+    /* margin: 2px 3px 5px 10px; */
+    /* margin: 2px 30px 10px; */
+    /* margin: 30px 10px; */
+    margin: 5px auto;/* how to center an element */
+    padding: 40px ;
+    /* border-style: ridge; */
+    /* border-width: 10px; */
+    /* border-width: 1px, 3px, 5px, 3px; */
+    /* border-color: blueviolet; */
+    /* border: 2px dashed blue; */
+    border-top: 3px ridge #10b52b ;
+    border-radius: 10px;
+}
+
+.myim{
+    border-style: solid;
+    border-color: blue;
+    /* border-radius: 40%; */
+    width: 200px;
+    border-bottom-left-radius: 30px;
+    
+
+    
+}
+.imdiv{
+    /* text-align: center; */
+    text-align: justify;
+}
+
+.anotherbox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    
+    
+}
+
+
+/* table styling */
+table{
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+
+th{
+    background-color: #10b52b;
+    color: #fff;
+    padding: 20px 10px;
+    border: 2px solid #000;
+}
+th:hover{
+    background-color: #000;
+    color: #fff;
+}
+td{
+    border: 2px solid #000;
+    padding: 20px 10px;
+    text-align: center;
+    }
+tr{
+    background-color: pink;
+}
+
+tr:hover{
+    background-color: purple;
+    color: #fff;
+}
