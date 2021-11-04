@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            background-color: rgb(229, 233, 0);
+            position: sticky;
+            top: 0;
+            text-align: center;
+            z-index: 1000;
+            opacity: .8;
+            max-width: 900px;
+
+        }
+        .top a{
+            color: #fff;
+            margin: 10px 5px;
+            text-decoration: none;
+        }
+        .top a:hover{
+            color: orange;
+            transition: .5s ease-in;
+        }
+        body{height: 1000px;
+
+        }
+        li{
+            display: inline;
+            position: relative;
+            z-index: 2000;
+        }
+        span{
+            display: block;
+        }
+        .write{
+            visibility: collapse;
+        }
+        .message{
+            text-align:center ;
+            padding-bottom: 10px;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="message">This is Black Friday</div>
+    <div class="top">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <span>na code wey pass me</span>
+    <span class="write">i wan dey write</span>
+    
+    <ul>
+        <li>Ace</li>
+        <li>chukwuemeka</li>
+        <li>charis</li>
+    </ul>
+    <div id="mydiv" onclick="loss()">this div is set to disappear 
+    </div>
+    <script>
+        var mydiv = document.querySelector("#mydiv")
+        const loss =()=>{
+            mydiv.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
